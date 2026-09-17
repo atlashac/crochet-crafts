@@ -1,0 +1,1447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Free crochet patterns, beginner crochet tutorials, Halloween crochet ideas, Christmas crochet patterns and printable PDF crochet patterns.">
+
+<title>Loop & Bloom | Crochet Patterns & Tutorials</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --background: #fffaf5;
+    --white: #ffffff;
+    --text: #302722;
+    --muted: #766b64;
+    --accent: #c9795d;
+    --accent-dark: #a85e45;
+    --soft: #f5e6dd;
+    --border: #eadbd1;
+}
+
+body {
+    background: var(--background);
+    color: var(--text);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1150px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* TOP BAR */
+
+.top-bar {
+    background: #302722;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    font-size: 13px;
+}
+
+/* HEADER */
+
+header {
+    background: rgba(255,250,245,0.97);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: Georgia, serif;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+.menu-button {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 25px;
+}
+
+/* HERO */
+
+.hero {
+    padding: 75px 0;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 45px;
+    align-items: center;
+}
+
+.eyebrow {
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-family: Georgia, serif;
+    font-size: 58px;
+    line-height: 1.1;
+    margin: 15px 0 20px;
+}
+
+.hero p {
+    color: var(--muted);
+    font-size: 18px;
+    max-width: 600px;
+}
+
+.buttons {
+    margin-top: 25px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 9px;
+    background: var(--accent);
+    color: white;
+    font-weight: bold;
+    border: 1px solid var(--accent);
+    cursor: pointer;
+}
+
+.button:hover {
+    background: var(--accent-dark);
+}
+
+.button-outline {
+    background: transparent;
+    color: var(--text);
+    border-color: var(--border);
+}
+
+.hero-image {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+/* ADS */
+
+.ad {
+    border: 1px dashed #d6c4b9;
+    background: white;
+    color: #a09289;
+    text-align: center;
+    padding: 17px;
+    margin-bottom: 55px;
+    font-size: 12px;
+}
+
+/* SECTIONS */
+
+.section {
+    padding: 65px 0;
+}
+
+.section-title {
+    margin-bottom: 30px;
+}
+
+.section-title h2 {
+    font-family: Georgia, serif;
+    font-size: 36px;
+    margin-top: 7px;
+}
+
+.section-title p {
+    color: var(--muted);
+}
+
+/* CARDS */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.card-image {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 18px;
+}
+
+.card h3 {
+    font-family: Georgia, serif;
+    font-size: 21px;
+    margin: 10px 0;
+}
+
+.card p {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.tag {
+    display: inline-block;
+    background: var(--soft);
+    padding: 5px 10px;
+    border-radius: 50px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+/* PATTERNS */
+
+.pattern-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.pattern-grid .card-image {
+    height: 270px;
+}
+
+/* SHOP */
+
+.search {
+    width: 100%;
+    max-width: 420px;
+    padding: 13px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.filters {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.filter {
+    padding: 9px 15px;
+    border-radius: 50px;
+    border: 1px solid var(--border);
+    background: white;
+    cursor: pointer;
+}
+
+.filter.active {
+    background: var(--text);
+    color: white;
+}
+
+.price {
+    color: var(--accent);
+    font-weight: bold;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* NEWSLETTER */
+
+.newsletter {
+    background: var(--soft);
+    border-radius: 25px;
+    padding: 55px 25px;
+    text-align: center;
+}
+
+.newsletter h2 {
+    font-family: Georgia, serif;
+    font-size: 35px;
+}
+
+.newsletter p {
+    color: var(--muted);
+    margin: 10px 0 20px;
+}
+
+.email {
+    padding: 13px;
+    width: min(100%, 350px);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+
+/* FOOTER */
+
+footer {
+    border-top: 1px solid var(--border);
+    margin-top: 60px;
+    padding: 40px 0;
+    color: var(--muted);
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 30px;
+}
+
+footer strong {
+    color: var(--text);
+}
+
+footer a:hover {
+    color: var(--accent);
+}
+
+/* MODAL */
+
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.65);
+    z-index: 500;
+    padding: 20px;
+}
+
+.modal-content {
+    background: white;
+    max-width: 550px;
+    margin: 10vh auto;
+    padding: 30px;
+    border-radius: 18px;
+}
+
+.close {
+    float: right;
+    border: none;
+    background: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* MOBILE */
+
+@media (max-width: 850px) {
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: var(--background);
+        flex-direction: column;
+        padding: 20px;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pattern-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .hero {
+        padding: 45px 0;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero-image {
+        height: 280px;
+    }
+
+    .grid,
+    .pattern-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 45px 0;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+
+<div class="top-bar">
+    Free Crochet Patterns • Beginner Tutorials • Seasonal Crochet Ideas
+</div>
+
+<!-- HEADER -->
+
+<header>
+
+<div class="container navbar">
+
+<a href="#" class="logo">
+    Loop & Bloom
+</a>
+
+<button class="menu-button" onclick="toggleMenu()">
+    ☰
+</button>
+
+<nav class="nav-links" id="navLinks">
+
+<a href="#free-patterns">Free Patterns</a>
+<a href="#categories">Categories</a>
+<a href="#tutorials">Tutorials</a>
+<a href="#shop">Shop</a>
+<a href="#blog">Blog</a>
+
+</nav>
+
+</div>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="container hero-grid">
+
+<div>
+
+<div class="eyebrow">
+    Crochet Made Simple
+</div>
+
+<h1>
+    Make something beautiful, one stitch at a time.
+</h1>
+
+<p>
+    Free crochet patterns, beginner-friendly tutorials,
+    seasonal projects and printable crochet patterns
+    for your next handmade creation.
+</p>
+
+<div class="buttons">
+
+<a href="#free-patterns" class="button">
+    Explore Free Patterns
+</a>
+
+<a href="#shop" class="button button-outline">
+    Visit Pattern Shop
+</a>
+
+</div>
+
+</div>
+
+<img
+class="hero-image"
+src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=1000&q=80"
+alt="Crochet handmade project">
+
+</div>
+
+</section>
+
+<!-- AD -->
+
+<div class="container">
+
+<div class="ad">
+    ADVERTISEMENT
+</div>
+
+</div>
+
+<!-- CATEGORIES -->
+
+<section class="section" id="categories">
+
+<div class="container">
+
+<div class="section-title">
+
+<div class="eyebrow">
+    Browse
+</div>
+
+<h2>
+    Find your next project
+</h2>
+
+</div>
+
+<div class="grid">
+
+<a href="#shop" class="card">
+
+<img
+class="card-image"
+src="https://images.unsplash.com/photo-1607453998774-d533f65dac99?auto=format&fit=crop&w=700&q=80"
+alt="Beginner crochet">
+
+<div class="card-content">
+
+<span class="tag">
+    BEGINNER
+</span>
+
+<h3>
+    Easy Crochet
+</h3>
+
+<p>
+    Simple projects for your first stitches.
+</p>
+
+</div>
+
+</a>
+
+<a href="#shop" class="card">
+
+<img
+class="card-image"
+src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=700&q=80"
+alt="Amigurumi crochet">
+
+<div class="card-content">
+
+<span class="tag">
+    AMIGURUMI
+</span>
+
+<h3>
+    Cute Amigurumi
+</h3>
+
+<p>
+    Small handmade characters and gifts.
+</p>
+
+</div>
+
+</a>
+
+<a href="#shop" class="card">
+
+<img
+class="card-image"
+src="https://images.unsplash.com/photo-1599685315640-9ce8a3f3b5c5?auto=format&fit=crop&w=700&q=80"
+alt="Halloween crochet">
+
+<div class="card-content">
+
+<span class="tag">
+    HALLOWEEN
+</span>
+
+<h3>
+    Spooky Crochet
+</h3>
+
+<p>
+    Ghosts, pumpkins, bats and more.
+</p>
+
+</div>
+
+</a>
+
+<a href="#shop" class="card">
+
+<img
+class="card-image"
+src="https://images.unsplash.com/photo-1608831540955-35094d48694a?auto=format&fit=crop&w=700&q=80"
+alt="Christmas crochet">
+
+<div class="card-content">
+
+<span class="tag">
+    CHRISTMAS
+</span>
+
+<h3>
+    Christmas Makes
+</h3>
+
+<p>
+    Decorations and handmade gifts.
+</p>
+
+</div>
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FREE PATTERNS -->
+
+<section class="section" id="free-patterns">
+
+<div class="container">
+
+<div class="section-title">
+
+<div class="eyebrow">
+    Free Patterns
+</div>
+
+<h2>
+    Start crocheting today
+</h2>
+
+<p>
+    Beginner-friendly projects you can try right now.
+</p>
+
+</div>
+
+<div class="pattern-grid">
+
+<!-- PUMPKIN -->
+
+<article class="card">
+
+<img
+class="card-image"
+src="https://images.unsplash.com/photo-1577083552431-6e5fd01988f5?auto=format&fit=crop&w=700&q=80"
+alt="Crochet pumpkin">
+
+<div class="card-content">
+
+<span class="tag">
+    HALLOWEEN
+</span>
+
+<h3>
+    Mini Crochet Pumpkin
+</h3>
+
+<p>
+    A quick seasonal crochet project using simple stitches.
+</p>
+
+<br>
+
+<button
+class="button"
+onclick="showPattern(
+'Mini Crochet Pumpkin',
+'This is a free pattern preview. Add your complete crochet instructions here later.'
+)">
+View Pattern
+</button>
+
+</div>
+
+</article>
+
+<!-- FLOWER -->
+
+<article class="card">
+
+<img
+class="card-image"
+src="https://images.unsplash.com/photo-1589994160839-163cd867cfe8?auto=format&fit=crop&w=700&q=80"
+alt="Crochet flower">
+
+<div class="card-content">
+
+<span class="tag">
+    BEGINNER
+</span>
+
+<h3>
+    Simple Crochet Flower
+</h3>
+
+<p>
+    A small project for practicing your basic stitches.
+</p>
+
+<br>
+
+<button
+class="button"
+onclick="showPattern(
+'Simple Crochet Flower',
+'This is a free pattern preview. Add your complete crochet instructions here later.'
+)">
+View Pattern
+</button>
+
+</div>
+
+</article>
+
+<!-- HEART -->
+
+<article class="card">
+
+<img
+class="card-image"
+src="https://images.unsplash.com/photo-1601121141461-9d6647bca1ed?auto=format&fit=crop&w=700&q=80"
+alt="Crochet heart">
+
+<div class="card-content">
+
+<span class="tag">
+    BEGINNER
+</span>
+
+<h3>
+    Little Crochet Heart
+</h3>
+
+<p>
+    Perfect for gifts, decorations and small handmade projects.
+</p>
+
+<br>
+
+<button
+class="button"
+onclick="showPattern(
+'Little Crochet Heart',
+'This is a free pattern preview. Add your complete crochet instructions here later.'
+)">
+View Pattern
+</button>
+
+</div>
+
+</article>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- TUTORIAL -->
+
+<section class="section" id="tutorials">
+
+<div class="container">
+
+<div class="section-title">
+
+<div class="eyebrow">
+    Learn
+</div>
+
+<h2>
+    Beginner Crochet Guide
+</h2>
+
+<p>
+    Learn crochet from the first chain to your first finished project.
+</p>
+
+</div>
+
+<div class="card">
+
+<div class="card-content">
+
+<h3>
+    How to Start Crochet: Complete Beginner Guide
+</h3>
+
+<p>
+    Learn how to choose your yarn and hook,
+    make a slip knot, chain, single crochet,
+    double crochet and understand basic crochet patterns.
+</p>
+
+<br>
+
+<a href="#blog" class="button">
+    Read Guide
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SHOP -->
+
+<section class="section" id="shop">
+
+<div class="container">
+
+<div class="section-title">
+
+<div class="eyebrow">
+    Pattern Shop
+</div>
+
+<h2>
+    Printable PDF Patterns
+</h2>
+
+<p>
+    Digital crochet patterns for your next project.
+</p>
+
+</div>
+
+<input
+type="text"
+id="search"
+class="search"
+placeholder="Search patterns..."
+onkeyup="filterProducts()">
+
+<div class="filters">
+
+<button
+class="filter active"
+onclick="setFilter('all',this)">
+All
+</button>
+
+<button
+class="filter"
+onclick="setFilter('Halloween',this)">
+Halloween
+</button>
+
+<button
+class="filter"
+onclick="setFilter('Amigurumi',this)">
+Amigurumi
+</button>
+
+<button
+class="filter"
+onclick="setFilter('Christmas',this)">
+Christmas
+</button>
+
+<button
+class="filter"
+onclick="setFilter('Beginner',this)">
+Beginner
+</button>
+
+</div>
+
+<div class="grid" id="products">
+
+<!-- PRODUCT 1 -->
+
+<div class="card product" data-category="Halloween">
+
+<img
+class="card-image"
+src="https://images.unsplash.com/photo-1577083552431-6e5fd01988f5?auto=format&fit=crop&w=700&q=80"
+alt="Ghost crochet pattern">
+
+<div class="card-content">
+
+<span class="tag">
+    HALLOWEEN
+</span>
+
+<h3>
+    Ghost Crochet Pattern
+</h3>
+
+<p>
+    Printable PDF crochet pattern.
+</p>
+
+<div class="price">
+    $3.99
+</div>
+
+<button
+class="button"
+onclick="buyPattern('Ghost Crochet Pattern')">
+Buy PDF
+</button>
+
+</div>
+
+</div>
+
+<!-- PRODUCT 2 -->
+
+<div class="card product" data-category="Amigurumi">
+
+<img
+class="card-image"
+src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=700&q=80"
+alt="Mini bear crochet pattern">
+
+<div class="card-content">
+
+<span class="tag">
+    AMIGURUMI
+</span>
+
+<h3>
+    Mini Bear Pattern
+</h3>
+
+<p>
+    Printable PDF crochet pattern.
+</p>
+
+<div class="price">
+    $4.99
+</div>
+
+<button
+class="button"
+onclick="buyPattern('Mini Bear Pattern')">
+Buy PDF
+</button>
+
+</div>
+
+</div>
+
+<!-- PRODUCT 3 -->
+
+<div class="card product" data-category="Christmas">
+
+<img
+class="card-image"
+src="https://images.unsplash.com/photo-1608831540955-35094d48694a?auto=format&fit=crop&w=700&q=80"
+alt="Christmas crochet pattern">
+
+<div class="card-content">
+
+<span class="tag">
+    CHRISTMAS
+</span>
+
+<h3>
+    Christmas Tree Pattern
+</h3>
+
+<p>
+    Printable PDF crochet pattern.
+</p>
+
+<div class="price">
+    $3.49
+</div>
+
+<button
+class="button"
+onclick="buyPattern('Christmas Tree Pattern')">
+Buy PDF
+</button>
+
+</div>
+
+</div>
+
+<!-- PRODUCT 4 -->
+
+<div class="card product" data-category="Beginner">
+
+<img
+class="card-image"
+src="https://images.unsplash.com/photo-1607453998774-d533f65dacfa?auto=format&fit=crop&w=700&q=80"
+alt="Beginner crochet bundle">
+
+<div class="card-content">
+
+<span class="tag">
+    BEGINNER
+</span>
+
+<h3>
+    Beginner Bundle
+</h3>
+
+<p>
+    Five easy printable crochet patterns.
+</p>
+
+<div class="price">
+    $8.99
+</div>
+
+<button
+class="button"
+onclick="buyPattern('Beginner Bundle')">
+Buy PDF
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- BLOG -->
+
+<section class="section" id="blog">
+
+<div class="container">
+
+<div class="section-title">
+
+<div class="eyebrow">
+    Blog
+</div>
+
+<h2>
+    Latest Crochet Ideas
+</h2>
+
+</div>
+
+<div class="grid">
+
+<article class="card">
+
+<div class="card-content">
+
+<span class="tag">
+    BEGINNER
+</span>
+
+<h3>
+    25 Easy Crochet Projects for Beginners
+</h3>
+
+<p>
+    Discover simple projects that are perfect for people learning crochet.
+</p>
+
+<br>
+
+<a href="#tutorials" class="button">
+    Read Article
+</a>
+
+</div>
+
+</article>
+
+<article class="card">
+
+<div class="card-content">
+
+<span class="tag">
+    HALLOWEEN
+</span>
+
+<h3>
+    20 Halloween Crochet Ideas
+</h3>
+
+<p>
+    Ghosts, pumpkins, bats, spiders and spooky decorations.
+</p>
+
+<br>
+
+<a href="#shop" class="button">
+    Explore
+</a>
+
+</div>
+
+</article>
+
+<article class="card">
+
+<div class="card-content">
+
+<span class="tag">
+    GUIDE
+</span>
+
+<h3>
+    How to Choose Crochet Yarn
+</h3>
+
+<p>
+    Understand yarn weight, fiber, hook size and beginner-friendly yarn.
+</p>
+
+<br>
+
+<a href="#tutorials" class="button">
+    Read Guide
+</a>
+
+</div>
+
+</article>
+
+<article class="card">
+
+<div class="card-content">
+
+<span class="tag">
+    IDEAS
+</span>
+
+<h3>
+    Small Crochet Gifts That Sell
+</h3>
+
+<p>
+    Simple handmade products and crochet pattern ideas.
+</p>
+
+<br>
+
+<a href="#shop" class="button">
+    See Patterns
+</a>
+
+</div>
+
+</article>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- NEWSLETTER -->
+
+<section class="section">
+
+<div class="container">
+
+<div class="newsletter">
+
+<h2>
+    Get Free Crochet Ideas
+</h2>
+
+<p>
+    New patterns, tutorials and seasonal crochet projects.
+</p>
+
+<form onsubmit="subscribe(event)">
+
+<input
+id="email"
+class="email"
+type="email"
+placeholder="Your email address"
+required>
+
+<button class="button">
+    Subscribe
+</button>
+
+</form>
+
+<p id="message"></p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="container footer-grid">
+
+<div>
+
+<strong>
+    Loop & Bloom
+</strong>
+
+<p>
+    Free crochet patterns, tutorials and printable digital patterns.
+</p>
+
+</div>
+
+<div>
+
+<strong>
+    Explore
+</strong>
+
+<p>
+<a href="#free-patterns">Free Patterns</a><br>
+<a href="#tutorials">Tutorials</a><br>
+<a href="#shop">Shop</a>
+</p>
+
+</div>
+
+<div>
+
+<strong>
+    Information
+</strong>
+
+<p>
+<a href="#">About</a><br>
+<a href="#">Contact</a><br>
+<a href="#">Privacy Policy</a>
+</p>
+
+</div>
+
+</div>
+
+</footer>
+
+<!-- MODAL -->
+
+<div class="modal" id="modal">
+
+<div class="modal-content">
+
+<button class="close" onclick="closeModal()">
+    ×
+</button>
+
+<h2 id="modalTitle"></h2>
+
+<p id="modalText"></p>
+
+<br>
+
+<button class="button" onclick="closeModal()">
+    Close
+</button>
+
+</div>
+
+</div>
+
+<script>
+
+let currentFilter = "all";
+
+/* MOBILE MENU */
+
+function toggleMenu() {
+
+    document
+    .getElementById("navLinks")
+    .classList
+    .toggle("show");
+
+}
+
+/* FREE PATTERN MODAL */
+
+function showPattern(title, text) {
+
+    document
+    .getElementById("modalTitle")
+    .textContent = title;
+
+    document
+    .getElementById("modalText")
+    .textContent = text;
+
+    document
+    .getElementById("modal")
+    .style.display = "block";
+
+}
+
+function closeModal() {
+
+    document
+    .getElementById("modal")
+    .style.display = "none";
+
+}
+
+/* FILTER */
+
+function setFilter(category, button) {
+
+    currentFilter = category;
+
+    document
+    .querySelectorAll(".filter")
+    .forEach(function(btn) {
+
+        btn.classList.remove("active");
+
+    });
+
+    button.classList.add("active");
+
+    filterProducts();
+
+}
+
+/* SEARCH */
+
+function filterProducts() {
+
+    let search =
+    document
+    .getElementById("search")
+    .value
+    .toLowerCase();
+
+    let products =
+    document
+    .querySelectorAll(".product");
+
+    products.forEach(function(product) {
+
+        let category =
+        product.dataset.category;
+
+        let text =
+        product.innerText.toLowerCase();
+
+        let categoryMatch =
+        currentFilter === "all" ||
+        category === currentFilter;
+
+        let searchMatch =
+        text.includes(search);
+
+        if(categoryMatch && searchMatch) {
+
+            product.style.display = "block";
+
+        } else {
+
+            product.style.display = "none";
+
+        }
+
+    });
+
+}
+
+/* BUY */
+
+function buyPattern(name) {
+
+    alert(
+        "Demo only.\n\n" +
+        "Later you can connect this button to Gumroad, Payhip or another digital-product checkout.\n\n" +
+        "Product: " + name
+    );
+
+}
+
+/* NEWSLETTER */
+
+function subscribe(event) {
+
+    event.preventDefault();
+
+    document
+    .getElementById("message")
+    .textContent =
+    "Thank you! Email collection will be connected later.";
+
+}
+
+</script>
+
+</body>
+</html>
